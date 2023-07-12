@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title >RAJASEKARAN</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin-top: 10;
+      margin: 10;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+    
+    nav {
+      background-color: #555;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+    
+    section {
+      padding: 20px;
+      margin: 20px;
+      background-color: #eae8e8;
+      border: 5px solid #928d8d;
+      border-radius: 25px;
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+    
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Responsive Styles */
+    @media only screen and (max-width: 600px) {
+      header {
+        padding: 10px;
+      }
+      
+      nav {
+        padding: 5px;
+      }
+      
+      nav ul li {
+        margin-right: 5px;
+      }
+      
+      section {
+        margin: 20px;
+        padding: 50px;
+      }
+      
+      footer {
+        padding: 10px;
+      }
+    }
+    
+    /* Side by Side Layout */
+    .side-by-side {
+      display: flex;
+      /* flex-wrap: wrap; */
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+    
+    .side-by-side > div {
+      flex: 1 1 50%;
+    } 
+    
+    .side-by-side > div:first-child {
+      margin-right: 0px;
+    }
+    
+    .side-by-side > div:last-child {
+      margin-left: 80px;
+    } 
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RAJASEKARAN V</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <section id="home" class="side-by-side">
+    <div>
+      <h2>Welcome to My Portfolio</h2>
+      <!-- <p>This is my personal portfolio website.</p> -->
+    </div>
+    <div>
+      <img src="./image.jpg" alt="My Photo" height="100%" width="40%" style="border-radius: 20%;">
+    </div>
+  </section>
+  
+  <section id="about">
+    <h2>About Me</h2>
+    <p>An energetic person loving to learn new stuff and apply them in real-life.Looking forward to earning the position of Software Engineer in a leading organization to show case my skills in programming to generate high-end solutions.</p>
+  </section>
+  
+  <section id="projects">
+    <h2>My Projects</h2>
+    <ul>
+      <h3>Blog app</h3>
+      <li>I have build a blog app where users can create a blog post by name ,
+        image , description and publish.</li>
+        <br>
+      <li>Blogging apps are widely used for sharing knowledge and information on
+        various topics</li>
+        <br>
+        <li>Technology Used : MERN Stack</li>
+    </ul>
+    <ul>
+        <h3>Car Rental System</h3>
+        <li>The public vehicle is not the best option . Public vehicles are crowded
+            generally not running on time e.g, trains , bus.</li>
+            <br>
+        <li>Here is our main problem to reach at own place on time with comfort
+            thus, Car Renting comes up with a solution</li>
+            <br>
+            <li>Technology Used : HTML , CSS , Javascript 
+                Database : Firebase</li>
+      </ul>
+  </section>
+  
+  <section id="Skills" >
+    <h2>skills</h2>
+    <ul>
+      <h3>Languages Known</h3>
+            <ul>
+                <li>C</li>
+                <li>Java</li>
+            </ul>
+            <h3>Query Languages</h3>
+            <ul>
+                <li>Mysql</li>
+                <li>MongoDB</li>
+            </ul>
+            <h3>Web Technologies</h3>
+            <ul>
+                <li>HTMl</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+            <h3>Full Stack</h3>
+            <ul>
+                <li>MERN</li>
+            </ul>
+            <h3>Core Concepts</h3>
+            <ul>
+                <li>Data Structures and Algorithm</li>
+                <li>Operating System</li>
+            </ul>
+      
+    </ul>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <h4>E-mail</h4>
+    <ul>
+        <li>rajasekaran3300@gmail.com</li>
+    </ul>
+    <h4>Phone Number</h4>
+    <ul>
+        <li>8838808246</li>
+    </ul>
+  </section>
+  
+  <footer>
+    <h2>"Creativity is intelligence having fun."</h2>
+  </footer>
+</body>
+</html>
